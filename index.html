@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ℕ𝕞𝕒𝕣𝕜𝕖𝕥s - Votre Shop Gaming</title>
+    <title>Nmarkets - Votre Shop Gaming</title>
     <style>
         * {
             margin: 0;
@@ -40,13 +40,15 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
         }
 
         .logo img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
+            border: 2px solid #ff6b6b;
+            object-fit: cover;
         }
 
         .logo-text {
@@ -55,6 +57,7 @@
             background: linear-gradient(45deg, #ff6b6b, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: 'Arial Black', sans-serif;
         }
 
         .nav-links {
@@ -67,6 +70,7 @@
             color: white;
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
 
         .nav-links a:hover {
@@ -256,8 +260,8 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <img src="logo.png" alt="ℕ𝕞𝕒𝕣𝕜𝕖𝕥s Logo" style="width: 50px; height: 50px; border-radius: 50%;">
-                <span class="logo-text">ℕ𝕞𝕒𝕣𝕜𝕖𝕥s</span>
+                <img src="logo.png" alt="Nmarkets Logo" onload="console.log('✅ Logo chargé!')" onerror="console.error('❌ Logo non trouvé'); this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiIGZpbGw9IiNkYzI2MjYiLz4KPHRleHQgeD0iMjUiIHk9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtZmFtaWx5PSJBcmlhbCI+TjwvdGV4dD4KPC9zdmc+'">
+                <span class="logo-text">Nmarkets</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
@@ -357,12 +361,10 @@
             <p>Pour toute commande ou question, rejoignez notre Discord</p>
             <a href="https://discord.gg/CwkCXtGzGt" target="_blank" class="discord-btn">💬 Discord</a>
         </div>
-        <p>&copy; 2025 ℕ𝕞𝕒𝕣𝕜𝕖𝕥s. Tous droits réservés.</p>
+        <p>&copy; 2025 Nmarkets. Tous droits réservés.</p>
     </footer>
 
     <script>
-        // Plus besoin de la fonction openDiscord()
-        
         // Animation au scroll
         const observerOptions = {
             threshold: 0.1,
