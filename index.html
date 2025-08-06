@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
             color: white;
             min-height: 100vh;
         }
@@ -52,7 +52,7 @@
         .logo-text {
             font-size: 2rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, #ff6b6b, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -94,7 +94,7 @@
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, #dc2626, #ef4444);
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -256,7 +256,7 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <img src="https://i.imgur.com/placeholder.png" alt="Logo" id="logoImg">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(45deg, #ff6b6b, #fbbf24); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: white;">N</div>
                 <span class="logo-text">ℕ𝕞𝕒𝕣𝕜𝕖𝕥s</span>
             </div>
             <ul class="nav-links">
@@ -297,7 +297,7 @@
                         <div>📅 1 Mois → <strong>5€</strong></div>
                         <div>📅 Lifetime → <strong>10€</strong></div>
                     </div>
-                    <button class="order-btn" onclick="openDiscord()">Commander</button>
+                    <button class="order-btn" onclick="window.open('https://discord.gg/CwkCXtGzGt', '_blank')">Commander</button>
                 </div>
 
                 <div class="service-card animated">
@@ -313,7 +313,7 @@
                         <li>Platinum à Diamond → 9€</li>
                         <li>Diamond à Ascendant → 13,5€</li>
                     </ul>
-                    <button class="order-btn" onclick="openDiscord()">Commander</button>
+                    <button class="order-btn" onclick="window.open('https://discord.gg/CwkCXtGzGt', '_blank')">Commander</button>
                 </div>
 
                 <div class="service-card animated">
@@ -329,7 +329,7 @@
                         <li>Diamant → Champion → 10€</li>
                         <li>+10% XP gratuit + Screenshots</li>
                     </ul>
-                    <button class="order-btn" onclick="openDiscord()">Commander</button>
+                    <button class="order-btn" onclick="window.open('https://discord.gg/CwkCXtGzGt', '_blank')">Commander</button>
                 </div>
 
                 <div class="service-card animated">
@@ -345,7 +345,7 @@
                         <li>Or (1-3) → 15€</li>
                         <li>Platine+ → 18€+</li>
                     </ul>
-                    <button class="order-btn" onclick="openDiscord()">Commander</button>
+                    <button class="order-btn" onclick="window.open('https://discord.gg/CwkCXtGzGt', '_blank')">Commander</button>
                 </div>
             </div>
         </section>
@@ -355,33 +355,14 @@
         <div class="contact-info">
             <h3>Contactez-nous</h3>
             <p>Pour toute commande ou question, rejoignez notre Discord</p>
-            <a href="#" class="discord-btn" onclick="openDiscord()">💬 Discord</a>
+            <a href="https://discord.gg/CwkCXtGzGt" target="_blank" class="discord-btn">💬 Discord</a>
         </div>
         <p>&copy; 2025 ℕ𝕞𝕒𝕣𝕜𝕖𝕥s. Tous droits réservés.</p>
     </footer>
 
     <script>
-        // Remplacer le logo par défaut par votre image
-        document.addEventListener('DOMContentLoaded', function() {
-            const logoImg = document.getElementById('logoImg');
-            // Mettez directement l'URL de votre logo uploadé (Imgur, Discord, etc.)
-            logoImg.src = 'URL_DE_VOTRE_LOGO_ICI'; 
-            logoImg.onerror = function() {
-                // Si l'image ne charge pas, afficher l'emoji gaming
-                this.style.background = 'linear-gradient(45deg, #ff6b6b, #4ecdc4)';
-                this.style.display = 'flex';
-                this.style.alignItems = 'center';
-                this.style.justifyContent = 'center';
-                this.innerHTML = '🎮';
-                this.style.color = 'white';
-                this.style.fontSize = '24px';
-            };
-        });
-
-        function openDiscord() {
-            window.open("https://discord.com/channels/1391128342756851883/1402720244732268766", "_blank");
-        }
-
+        // Plus besoin de la fonction openDiscord()
+        
         // Animation au scroll
         const observerOptions = {
             threshold: 0.1,
